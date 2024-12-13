@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch - Case</title>
+</head>
+<body>
+    <script>
+
+        /** SWITCH - CASE (Texto) */
+
+        let color;
+        color = prompt('Introduce un color: rojo/verde/azul').toLowerCase();
+
+        switch (color) {
+            case 'rojo':     // Caso valor == "rojo"
+                document.write("Introdujo ROJO");
+                break;
+            case 'verde':     // Caso valor == "verde"
+                document.write("Introdujo VERDE");
+                break;
+            case 'azul':     // Caso valor == "azul"
+                document.write("Introdujo AZUL");
+                break;
+            default:    // valor es distinto a los casos expuestos
+                document.write("ERROR: No introdujo un color");
+                break;
+        }
+
+    </script>
+</body>
+</html>

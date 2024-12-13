@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch - Case</title>
+</head>
+<body>
+    <script>
+
+        /** SWITCH - CASE (Numeros) */
+
+        let valor;
+        valor = parseInt(prompt('Introduce un valor entre 1 y 3...'));
+
+        switch (valor) {
+            case 1:     // Caso valor == 1
+                document.write("Introdujo UNO");
+                break;
+            case 2:     // Caso valor == 2
+                document.write("Introdujo DOS");
+                break;
+            case 3:     // Caso valor == 3
+                document.write("Introdujo TRES");
+                break;
+            default:    // valor es distinto a los casos expuestos
+                document.write("ERROR: Introdujo un numero fuera de rango");
+                break;
+        }
+
+    </script>
+</body>
+</html>
