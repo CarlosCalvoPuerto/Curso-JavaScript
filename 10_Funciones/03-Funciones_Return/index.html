@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch - Case</title>
+</head>
+
+<body>
+    <script>
+
+        /** FUNCIONES */
+
+        function suma(val1, val2) {
+            return val1 + val2
+        }
+
+        document.write(suma(5, 8));
+        document.write("<br>")
+
+        //=================================================
+
+        function saludar() {
+            return "hola a todos.";
+        }
+
+        let mensaje = saludar();
+        document.write(mensaje)
+        document.write("<br>")
+
+        //=================================================
+
+        function verColor(valor) {
+            valor = parseInt(prompt("Ingrese un valor 1 / 3..."));
+            switch (valor) {
+                case 1:
+                    return "Rojo";
+                case 2:
+                    return "Verde";
+                case 3:
+                    return "Amarillo";
+                default:
+                    return "Valor incorrecto";
+            }
+        }
+        
+        document.write(verColor());
+        document.write("<br>")
+
+    </script>
+</body>
+
+</html>
