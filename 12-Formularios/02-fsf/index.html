@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch - Case</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h4>Log In</h4>
+
+    <form action="">
+
+        <div class="caja">
+            <label for="usuario">Ingrese Usuario</label>
+            <input type="text" id="usuario">
+        </div>
+
+        <div class="caja">
+            <label for="clave">Ingrese Clave</label>
+            <input type="password" id="clave">
+        </div>
+
+        <input type="button" value="Confirmar" class="btn" onclick="verificar()">
+
+        <script>
+            /** FORMULARIOS */
+
+            let control = 0;
+            let usuario = "Carlos";
+            let contraseña = "acceso01";
+
+            function verificar() {
+                let clave = document.getElementById('clave').value;
+                let user = document.getElementById('usuario').value;
+
+                if (control >= 3) {
+                    alert("INTENTOS AGOTADOS, ACCESO BLOQUEADO")
+                }
+                else {
+                    if (clave != contraseña || user != usuario) {
+                        alert("USUARIO O CLAVE INCORRECTA.");
+                        control++;
+                    }
+                    else {
+                        window.open("http://www.google.es");
+                    }
+                }
+            }
+        </script>
+    </form>
+</body>
+
+</html>
