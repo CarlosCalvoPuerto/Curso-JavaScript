@@ -27,14 +27,19 @@
 
         <input type="button" value="Confirmar" class="btn" onclick="verificar()">
 
+        <label for="" id="comprobador"></label>
+
         <script>
             /** FORMULARIOS */
 
             let control = 0;
-            let usuario = "Carlos";
-            let contraseña = "acceso01";
+            let usuario = "Carlos";         // Este es el usuario
+            let contraseña = "acceso01";    // Esta es la contraseña
 
             function verificar() {
+
+                // document.getElementById("nombreDeID").value;
+                // Devuelve el valor que hay en el elemento HTML con el ID "nombreDeID".
                 let clave = document.getElementById('clave').value;
                 let user = document.getElementById('usuario').value;
 
@@ -47,7 +52,9 @@
                         control++;
                     }
                     else {
-                        window.open("http://www.google.es");
+                        // document.getElementById("nombreDeID").value;
+                        // Sobrescribe el elemento HTML con el ID "nombreDeID".
+                        document.getElementById('comprobador').innerHTML = "Usuario correcto";
                     }
                 }
             }
